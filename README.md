@@ -58,7 +58,7 @@ current_goal: >
 <table>
   <tr>
     <td width="50%">
-      <h3>🏗️ <a href="https://github.com/AhmadEbaid001/personal-portfolio-">AURA: Hybrid Cloud Registration</a></h3>
+      <h3>🏗️ <a href="https://github.com/AhmadEbaid001/personal-portfolio">AURA: Hybrid Cloud Registration</a></h3>
       <p><em>Capstone Project — Azure, React.js, Express.js, PostgreSQL</em></p>
       <p>Hybrid Cloud university registration system with auto-scaling Azure VMs, load balancers, RBAC, and OTP verification for zero-downtime peak traffic handling.</p>
     </td>
@@ -172,5 +172,5 @@ current_goal: >
 <p align="center">
   <a href="mailto:ahmedebaid0xc@gmail.com">📧 ahmedebaid0xc@gmail.com</a> · 
   <a href="https://www.linkedin.com/in/ahmed-ebaid-0xc/">LinkedIn</a> · 
-  <a href="https://ahmadebaid001.github.io/personal-portfolio-">Portfolio</a>
+  <a href="https://ahmadebaid001.github.io/personal-portfolio">Portfolio</a>
 </p>
