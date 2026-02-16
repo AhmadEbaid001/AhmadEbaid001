@@ -5,7 +5,7 @@
 <p align="center">
   <a href="https://www.linkedin.com/in/ahmed-ebaid-0xc/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
   <a href="mailto:ahmedebaid0xc@gmail.com"><img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/></a>
-  <a href="https://ahmadebaid001.github.io/personal-portfolio-"><img src="https://img.shields.io/badge/Portfolio-00F0FF?style=for-the-badge&logo=googlechrome&logoColor=black" alt="Portfolio"/></a>
+  <a href="https://ahmadebaid001.github.io/personal-portfolio"><img src="https://img.shields.io/badge/Portfolio-00F0FF?style=for-the-badge&logo=googlechrome&logoColor=black" alt="Portfolio"/></a>
   <img src="https://komarev.com/ghpvc/?username=AhmadEbaid001&style=for-the-badge&color=00f0ff&label=Profile+Views" alt="Profile Views"/>
 </p>
 
