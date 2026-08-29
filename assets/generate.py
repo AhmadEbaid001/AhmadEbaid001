@@ -267,6 +267,53 @@ def marquee(t):
     return "".join(p)
 
 
+# ---------------------------------------------------------------- badges ----
+# Brand marks are the official GitHub and LinkedIn glyphs, used only as link
+# icons. The rest are drawn here in the same stroke language as the other
+# figures.
+ICONS = {
+    # Brand marks kept on ONE line each: splitting a path across adjacent
+    # string literals silently joins the segments without a separator and
+    # corrupts the coordinates, which turned the octocat into a crescent.
+    "github": ("fill", "M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"),
+    "linkedin": ("fill", "M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"),
+    "mail": ("fill", "M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"),
+    "globe": ("stroke", "M12 3a9 9 0 100 18 9 9 0 000-18zM3.2 12h17.6M12 3.2a15 15 0 010 17.6M12 3.2a15 15 0 000 17.6"),
+    "doc": ("stroke", "M7 3.2h6.6L18 7.6V20a.8.8 0 01-.8.8H7a.8.8 0 01-.8-.8V4a.8.8 0 01.8-.8zM13.2 3.4V8h4.6M9.4 13.2h5.2M9.4 16.6h5.2"),
+}
+
+
+def badge(t, icon, label, accent_icon=True):
+    """One pill: brand mark plus label, sized to the text."""
+    fs, h, pad, gap, isz = 11, 34, 13, 9, 15
+    tw = len(label) * fs * CH + (len(label) - 1) * 1.4
+    W = pad + isz + gap + tw + pad
+    kind, d = ICONS[icon]
+    col = t["accent"] if accent_icon else t["fg"]
+    p = [svg_open(round(W), h, label)]
+    a = p.append
+    a(f'<rect x="0.5" y="0.5" width="{round(W)-1}" height="{h-1}" rx="3" '
+      f'fill="{t["panel"]}" stroke="{t["strong"]}"/>')
+    scale = isz / 24
+    ty = (h - isz) / 2
+    if kind == "fill":
+        a(f'<g transform="translate({pad} {ty}) scale({scale:.4f})">'
+          f'<path d="{d}" fill="{col}"/></g>')
+    else:
+        a(f'<g transform="translate({pad} {ty}) scale({scale:.4f})">'
+          f'<path d="{d}" fill="none" stroke="{col}" stroke-width="1.8" '
+          f'stroke-linecap="round" stroke-linejoin="round"/></g>')
+    a(f'<text x="{pad + isz + gap}" y="{h/2 + 4}" font-family="{MONO}" font-size="{fs}" '
+      f'letter-spacing="1.4" fill="{t["fg"]}">{label}</text>')
+    a('</svg>')
+    return "".join(p)
+
+
+BADGES = [("portfolio", "globe", "PORTFOLIO"), ("linkedin", "linkedin", "LINKEDIN"),
+          ("resume", "doc", "RESUME"), ("email", "mail", "EMAIL"),
+          ("github", "github", "GITHUB")]
+
+
 FIGURES = (("header", header), ("terminal", terminal),
            ("chain", chain), ("marquee", marquee))
 
@@ -275,4 +322,11 @@ if __name__ == "__main__":
         for theme, tokens in THEMES.items():
             path = os.path.join(OUT, f"{name}-{theme}.svg")
             io.open(path, "w", encoding="utf-8", newline="\n").write(fn(tokens))
+            print(f"wrote {os.path.basename(path):24} {os.path.getsize(path):>6} bytes")
+
+    for slug, icon, label in BADGES:
+        for theme, tokens in THEMES.items():
+            path = os.path.join(OUT, f"badge-{slug}-{theme}.svg")
+            io.open(path, "w", encoding="utf-8", newline="\n").write(
+                badge(tokens, icon, label))
             print(f"wrote {os.path.basename(path):24} {os.path.getsize(path):>6} bytes")

@@ -5,10 +5,36 @@
 </picture>
 
 <p align="center">
-  <a href="https://ahmadebaid001.github.io/personal-portfolio/"><b>Portfolio</b></a> &nbsp;·&nbsp;
-  <a href="https://www.linkedin.com/in/ahmed-ebaid-0xc/">LinkedIn</a> &nbsp;·&nbsp;
-  <a href="https://github.com/AhmadEbaid001/personal-portfolio/raw/main/Ahmed_Mohamed_Ebaid_Resume.pdf">Résumé</a> &nbsp;·&nbsp;
-  <a href="mailto:ahmedebaid0xc@gmail.com">ahmedebaid0xc@gmail.com</a>
+  <a href="https://ahmadebaid001.github.io/personal-portfolio/">
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="assets/badge-portfolio-dark.svg">
+      <img alt="Portfolio" src="assets/badge-portfolio-light.svg" height="34">
+    </picture>
+  </a>
+  <a href="https://www.linkedin.com/in/ahmed-ebaid-0xc/">
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="assets/badge-linkedin-dark.svg">
+      <img alt="LinkedIn" src="assets/badge-linkedin-light.svg" height="34">
+    </picture>
+  </a>
+  <a href="https://github.com/AhmadEbaid001/personal-portfolio/raw/main/Ahmed_Mohamed_Ebaid_Resume.pdf">
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="assets/badge-resume-dark.svg">
+      <img alt="Resume (PDF)" src="assets/badge-resume-light.svg" height="34">
+    </picture>
+  </a>
+  <a href="mailto:ahmedebaid0xc@gmail.com">
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="assets/badge-email-dark.svg">
+      <img alt="Email" src="assets/badge-email-light.svg" height="34">
+    </picture>
+  </a>
+  <a href="https://github.com/AhmadEbaid001">
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="assets/badge-github-dark.svg">
+      <img alt="GitHub" src="assets/badge-github-light.svg" height="34">
+    </picture>
+  </a>
 </p>
 
 <picture>
@@ -194,6 +220,26 @@ MITRE ATT&CK mapping, and the prevention write-up.
 </p>
 
 <p align="center">
-  <sub><b>Giza, Egypt</b> · open to cloud security roles ·
-  <a href="mailto:ahmedebaid0xc@gmail.com">ahmedebaid0xc@gmail.com</a></sub>
+  <a href="mailto:ahmedebaid0xc@gmail.com">
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="assets/badge-email-dark.svg">
+      <img alt="Email" src="assets/badge-email-light.svg" height="34">
+    </picture>
+  </a>
+  <a href="https://www.linkedin.com/in/ahmed-ebaid-0xc/">
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="assets/badge-linkedin-dark.svg">
+      <img alt="LinkedIn" src="assets/badge-linkedin-light.svg" height="34">
+    </picture>
+  </a>
+  <a href="https://ahmadebaid001.github.io/personal-portfolio/">
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="assets/badge-portfolio-dark.svg">
+      <img alt="Portfolio" src="assets/badge-portfolio-light.svg" height="34">
+    </picture>
+  </a>
+</p>
+
+<p align="center">
+  <sub><b>Giza, Egypt</b> · open to cloud security roles</sub>
 </p>
