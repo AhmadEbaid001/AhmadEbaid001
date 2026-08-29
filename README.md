@@ -1,176 +1,137 @@
-<p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=30&duration=3000&pause=1000&color=00F0FF&center=true&vCenter=true&multiline=true&width=700&height=80&lines=Ahmed+Mohamed+Ebaid;Security+Engineer+%7C+Cloud+Architect" alt="Typing SVG" />
-</p>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/header-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="assets/header-light.svg">
+  <img alt="Ahmed Mohamed Ebaid — Cloud Security Engineer" src="assets/header-dark.svg" width="100%">
+</picture>
 
-<p align="center">
-  <a href="https://www.linkedin.com/in/ahmed-ebaid-0xc/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
-  <a href="mailto:ahmedebaid0xc@gmail.com"><img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/></a>
-  <a href="https://ahmadebaid001.github.io/personal-portfolio"><img src="https://img.shields.io/badge/Portfolio-00F0FF?style=for-the-badge&logo=googlechrome&logoColor=black" alt="Portfolio"/></a>
-  <img src="https://komarev.com/ghpvc/?username=AhmadEbaid001&style=for-the-badge&color=00f0ff&label=Profile+Views" alt="Profile Views"/>
-</p>
+I build systems that can **prove they still work** — hybrid architectures that fail over
+without anyone watching, and stores that can walk a chain of records back and say exactly
+where trust ends.
 
----
+B.Sc. in Computational Science and Artificial Intelligence from Zewail City, majoring in
+Information Technology with a concentration in Networks, Security and Governance.
+Graduated July 2026.
 
-## 🔐 About Me
-
-```yaml
-name: Ahmed Mohamed Ebaid
-title: Security Engineer
-location: 6th of October, Giza, Egypt
-education:
-  degree: B.Sc. Information Technology (Networks, Security & Governance)
-  university: Zewail City of Science and Technology
-  graduation: July 2026
-focus_areas:
-  - Network Security
-  - Cloud Computing & Architecture
-  - Cybersecurity & Incident Response
-current_goal: >
-  Design and maintain scalable, secure, and redundant
-  infrastructure systems.
-```
-
-> *I don't just secure systems — I architect them from the ground up with security woven into every layer.*
+**[Portfolio](https://ahmadebaid001.github.io/personal-portfolio/)** ·
+[LinkedIn](https://www.linkedin.com/in/ahmed-ebaid-0xc/) ·
+[Résumé](https://github.com/AhmadEbaid001/personal-portfolio/raw/main/Ahmed_Mohamed_Ebaid_Resume.pdf) ·
+[ahmedebaid0xc@gmail.com](mailto:ahmedebaid0xc@gmail.com)
 
 ---
 
-## 🛡️ Core Expertise
+## What I'm doing now
 
-<table>
-  <tr>
-    <td align="center" width="25%"><strong>🔒 Security</strong></td>
-    <td align="center" width="25%"><strong>🌐 Networking</strong></td>
-    <td align="center" width="25%"><strong>☁️ Cloud</strong></td>
-    <td align="center" width="25%"><strong>💻 Development</strong></td>
-  </tr>
-  <tr>
-    <td>Vulnerability Assessment<br>Encryption & Cryptography<br>Incident Response<br>IT Governance<br>Security Frameworks<br>SIEM & SOC</td>
-    <td>Network Design<br>CCNA / CCNP<br>OSPF / VLANs<br>Link Aggregation<br>SNMP Monitoring<br>Dual-ISP Redundancy</td>
-    <td>Azure & AWS<br>Hybrid Cloud<br>Auto-Scaling<br>Load Balancers<br>Microsoft 365<br>Secure Computing</td>
-    <td>Python<br>Bash / Shell<br>SQL<br>HTML / CSS / JS<br>React.js<br>Express.js</td>
-  </tr>
-</table>
+- Building **AURA** with three teammates — a university registration platform that started
+  as our graduation project and is now in a pre-incubation programme.
+- Preparing for **AWS Certified Security — Specialty** (SCS-C02).
+- Open to cloud security and security engineering roles.
 
 ---
 
-## 🚀 Featured Projects
+## Selected work
 
-<table>
-  <tr>
-    <td width="50%">
-      <h3>🏗️ <a href="https://github.com/AhmadEbaid001/personal-portfolio">AURA: Hybrid Cloud Registration</a></h3>
-      <p><em>Capstone Project — Azure, React.js, Express.js, PostgreSQL</em></p>
-      <p>Hybrid Cloud university registration system with auto-scaling Azure VMs, load balancers, RBAC, and OTP verification for zero-downtime peak traffic handling.</p>
-    </td>
-    <td width="50%">
-      <h3>💾 <a href="https://github.com/AhmadEbaid001/DR-Framework">Network Backup & Disaster Recovery</a></h3>
-      <p><em>Bash, OpenSSL (AES-256), Cron, EVE-NG</em></p>
-      <p>Zero-Touch automated backup with 24h RPO, AES-256 encryption at rest, SSH with 2048-bit RSA keys, and 148 Mbps throughput with zero packet loss.</p>
-    </td>
-  </tr>
-  <tr>
-    <td width="50%">
-      <h3>🔐 <a href="https://github.com/AhmadEbaid001/Secure-Communication-with-RSA-and-Symmetric-Encryption">Secure Communication Protocol</a></h3>
-      <p><em>Python, PyCryptodome, RSA-2048, AES-GCM</em></p>
-      <p>End-to-end encrypted messaging using RSA-2048 key exchange, AES-GCM authenticated encryption, RSA-PSS digital signatures, and HKDF-SHA256 forward secrecy.</p>
-    </td>
-    <td width="50%">
-      <h3>🏢 <a href="https://github.com/AhmadEbaid001/Green-Datacenter-Design-Project">Enterprise Data Center Network</a></h3>
-      <p><em>Cisco Packet Tracer, OSPF, VLANs, SNMP, DHCP</em></p>
-      <p>Three-tier hierarchical network for 600+ users across five departments with OSPF dynamic routing, Dual-ISP redundancy, VLSM, and SNMPv2c monitoring.</p>
-    </td>
-  </tr>
-  <tr>
-    <td width="50%">
-      <h3>🌱 <a href="https://github.com/AhmadEbaid001/Smart-Plant-Monitoring-System">Smart Plant Monitoring System</a></h3>
-      <p><em>IoT, Arduino, Sensors</em></p>
-      <p>IoT-based solution for real-time plant health monitoring using sensor arrays and microcontroller integration.</p>
-    </td>
-    <td width="50%">
-      <h3>🤖 <a href="https://github.com/AhmadEbaid001/path-finding-AI-robot">Path-Finding AI Robot</a></h3>
-      <p><em>AI, Robotics, Pathfinding Algorithms</em></p>
-      <p>Intelligent robot implementing pathfinding algorithms for autonomous navigation and obstacle avoidance.</p>
-    </td>
-  </tr>
-</table>
+### AURA — Academic University Registration Architecture
 
----
+<sub>Private repository · [see it on the portfolio](https://ahmadebaid001.github.io/personal-portfolio/#aura)</sub>
 
-## 🏅 Certifications
+Multi-tenant SaaS for university registration, scheduling and grading. Four-person team at
+Zewail City; nominated for the Medal of Excellence in Entrepreneurship. Runs on a
+self-hosted server in Egypt and bursts into Azure only when the on-premises node saturates.
 
-<p>
-  <img src="https://img.shields.io/badge/DEPI-Information_Security_Analyst-00F0FF?style=for-the-badge&labelColor=0a0a1a" alt="DEPI"/>
-  <img src="https://img.shields.io/badge/Google-Cybersecurity_Professional-4285F4?style=for-the-badge&logo=google&labelColor=0a0a1a" alt="Google Cybersecurity"/>
-</p>
+I worked in the application and security layer: registration and semester-period scoping,
+the professor dashboard, the grade-change workflow with dean approval, multi-tenant
+isolation by `university_id`, and remediation of the critical and high findings from code
+scanning.
 
-- **Information Security Analyst** — Digital Egyptian Pioneers Initiative (DEPI), MCIT *(2026)*
-  - SOC Concepts · Vulnerability Management · SIEM · Incident Response · Security Operations
-- **Google Cybersecurity Professional Certificate** — Coursera *(2023)*
-  - Network Security · Threats & Vulnerabilities · Python Automation · Linux & SQL · Detection & Response
+`React 19` `Node 22` `Express 5` `PostgreSQL 17` `Socket.IO` `Redis` `HAProxy` `Cloudflare` `Azure Container Apps` `WireGuard`
 
----
+> **5,000** concurrent users sustained · **902,246** requests at 100% success ·
+> **299.55 ms** p95 · **$3.50/month** total infrastructure · 13 penetration-test findings
+> remediated
 
-## 💼 Experience
+### EcoForge GEMP — Green Energy Monitoring Platform
 
-| Role | Organization | Period |
-|------|-------------|--------|
-| 🔒 **Security Intern** | Commercial International Bank (CIB) | Jul – Aug 2025 |
-| 🌐 **Network Intern** | Zewail City IT Department | Jul 2024 – Jan 2025 |
-| 📚 **Junior Teaching Assistant** | Zewail City — Network Installation & Maintenance | Sep – Dec 2024 |
-| 🏛️ **IT Representative** | Zewail City Student Parliament | Sep 2023 – Sep 2024 |
+<sub>Private repository · [see it on the portfolio](https://ahmadebaid001.github.io/personal-portfolio/#gemp)</sub>
+
+Budget allocator for public-building retrofits, built for RoboDam 2026. Sole engineer on a
+two-person team — domain model, telemetry ingestion, optimisation engine, API and front end.
+
+Every meter reading is HMAC-signed and hash-chained on arrival, with chain heads anchored
+outside the database volume, so an altered *or* truncated record is detected. RBAC with an
+audit log that records denied actions as well as permitted ones. The CI pipeline blocks on
+any finding from Bandit, Semgrep, pip-audit, Gitleaks, Hadolint or Trivy, and every security
+exception carries an expiry date that fails the build once it lapses.
+
+`Python` `FastAPI` `Docker` `TimescaleDB` `MQTT` `OR-Tools CP-SAT` `nginx`
+
+> **457** automated tests · **50** buildings allocated · exact solver beats the best
+> heuristic by **20%** median under district constraints
+
+### [OtterCTF 2018 — Ransomware Memory Forensics](https://github.com/AhmadEbaid001/OtterCTF2018-Forensics)
+
+Four-phase memory forensics investigation of a Windows 7 host compromised by a
+torrent-delivered ransomware payload. I led the engagement: kill chain reconstruction,
+MITRE ATT&CK mapping, and the prevention write-up.
+
+`Volatility` `Memory forensics` `MITRE ATT&CK`
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/chain-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="assets/chain-light.svg">
+  <img alt="A hash chain of six signed records being verified end to end" src="assets/chain-dark.svg" width="100%">
+</picture>
+
+### Also built
+
+| Project | What it is |
+|---|---|
+| [Secure Communication Protocol](https://github.com/AhmadEbaid001/Secure-Communication-with-RSA-and-Symmetric-Encryption) | RSA-2048 key exchange, AES-GCM authenticated encryption, RSA-PSS signatures, HKDF-SHA256 forward secrecy |
+| [Backup &amp; Disaster Recovery Framework](https://github.com/AhmadEbaid001/DR-Framework) | Zero-touch backups at a 24-hour RPO, AES-256 at rest, 148 Mbps with zero packet loss |
+| [Enterprise Data Center Network](https://github.com/AhmadEbaid001/Green-Datacenter-Design-Project) | Three-tier design for 600+ users, OSPF, dual-ISP redundancy, VLSM, SNMPv2c |
+| [Personal portfolio](https://github.com/AhmadEbaid001/personal-portfolio) | Static single-page site — no framework, no build step, three interactive figures |
 
 ---
 
-## 🛠️ Tech Stack
+## Toolbox
 
-<p>
-  <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Bash-4EAA25?style=flat-square&logo=gnubash&logoColor=white"/>
-  <img src="https://img.shields.io/badge/SQL-CC2927?style=flat-square&logo=microsoftsqlserver&logoColor=white"/>
-  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black"/>
-  <img src="https://img.shields.io/badge/C++-00599C?style=flat-square&logo=cplusplus&logoColor=white"/>
-  <img src="https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white"/>
-  <img src="https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white"/>
-  <img src="https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black"/>
-  <img src="https://img.shields.io/badge/Express.js-000000?style=flat-square&logo=express&logoColor=white"/>
-  <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Azure-0078D4?style=flat-square&logo=microsoftazure&logoColor=white"/>
-  <img src="https://img.shields.io/badge/AWS-232F3E?style=flat-square&logo=amazonaws&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black"/>
-  <img src="https://img.shields.io/badge/Cisco-049FD9?style=flat-square&logo=cisco&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Arduino-00979D?style=flat-square&logo=arduino&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white"/>
-  <img src="https://img.shields.io/badge/OpenSSL-721412?style=flat-square&logo=openssl&logoColor=white"/>
-</p>
+| | |
+|---|---|
+| **Cloud &amp; infrastructure** | AWS (IAM, VPC, Security Groups, Load Balancer) · Azure Container Apps · hybrid cloud · Docker · nginx · HAProxy |
+| **DevSecOps** | GitHub Actions security gating · Bandit · Semgrep · pip-audit · Gitleaks · Trivy · Hadolint · container image signing |
+| **Security domains** | Vulnerability assessment · incident response · SIEM operations · threat modelling (MITRE ATT&amp;CK, STRIDE, PASTA) · encryption &amp; key management · RBAC · audit logging · data integrity (HMAC, hash chaining) |
+| **Security tooling** | Nessus · Splunk · Wireshark · Nmap · Snort · Volatility · Autopsy |
+| **Networking** | Network design &amp; installation · firewalls · VLANs · OSPF · VLSM · SNMP · MQTT · WireGuard · CCNA/CCNP track |
+| **Languages** | Python (FastAPI, pytest) · JavaScript (React, Node, Express) · Bash · SQL · C++ |
+| **Data &amp; platforms** | PostgreSQL · TimescaleDB · Redis · Linux (Ubuntu, Kali) · EVE-NG · Cisco Packet Tracer |
 
 ---
 
-## 📊 GitHub Analytics
+## Certifications
 
-<p align="center">
-  <img height="170" src="https://github-readme-stats.vercel.app/api?username=AhmadEbaid001&theme=tokyonight&hide_border=true&include_all_commits=true&count_private=true&bg_color=0a0a1a&title_color=00f0ff&text_color=8888aa&icon_color=00ff88" alt="GitHub Stats"/>
-  &nbsp;
-  <img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=AhmadEbaid001&theme=tokyonight&hide_border=true&layout=compact&bg_color=0a0a1a&title_color=00f0ff&text_color=8888aa" alt="Top Languages"/>
-</p>
+| Credential | Issuer | Year |
+|---|---|---|
+| Information Security Analyst — Infrastructure &amp; Security | DEPI · MCIT | 2026 |
+| Security Engineer · DevSecOps · Defending AWS *(3 certificates)* | TryHackMe | 2026 |
+| Google Cybersecurity Professional Certificate | Coursera | 2023 |
+| AWS Certified Security — Specialty (SCS-C02) | AWS | *in progress* |
 
-<p align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=AhmadEbaid001&theme=tokyonight&hide_border=true&background=0a0a1a&ring=00f0ff&fire=00ff88&currStreakLabel=00f0ff&sideLabels=8888aa&dates=555577" alt="GitHub Streak"/>
-</p>
+## Experience
 
-<p align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=AhmadEbaid001&theme=tokyonight&no-frame=true&no-bg=true&column=7&margin-w=8" alt="Trophies"/>
-</p>
+| Role | Organisation | Period |
+|---|---|---|
+| Security Intern | Commercial International Bank (CIB) | Jul – Aug 2025 |
+| Network Intern | Zewail City IT Department | Jul 2024 – Jan 2025 |
+| Junior Teaching Assistant — Network Installation &amp; Maintenance | Zewail City | Sep – Dec 2024 |
+| IT Representative | Zewail City Student Parliament | Sep 2023 – Sep 2024 |
 
 ---
 
 <p align="center">
-  <strong>🔒 Securing the digital world, one commit at a time.</strong><br>
-  <sub>Open to internships, collaborations, and security challenges.</sub>
+  <img height="150" alt="GitHub statistics" src="https://github-readme-stats.vercel.app/api?username=AhmadEbaid001&hide_border=true&include_all_commits=true&count_private=true&bg_color=00000000&title_color=22CD6E&text_color=B5B4B3&icon_color=22CD6E&hide_title=true"/>
+  <img height="150" alt="Most used languages" src="https://github-readme-stats.vercel.app/api/top-langs/?username=AhmadEbaid001&hide_border=true&layout=compact&bg_color=00000000&title_color=22CD6E&text_color=B5B4B3&hide_title=true"/>
 </p>
 
 <p align="center">
-  <a href="mailto:ahmedebaid0xc@gmail.com">📧 ahmedebaid0xc@gmail.com</a> · 
-  <a href="https://www.linkedin.com/in/ahmed-ebaid-0xc/">LinkedIn</a> · 
-  <a href="https://ahmadebaid001.github.io/personal-portfolio">Portfolio</a>
+  <sub><strong>Giza, Egypt</strong> · open to cloud security roles ·
+  <a href="mailto:ahmedebaid0xc@gmail.com">ahmedebaid0xc@gmail.com</a></sub>
 </p>
