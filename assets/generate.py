@@ -130,10 +130,13 @@ def terminal(t):
         ("ok", "457 tests green   chain head anchored   walk 01..05 ok"),
     ]
 
-    # every line gets an equal slot; the cycle holds at the end before resetting
+    # One pass, then freeze. A looping reveal means the panel is blank for
+    # part of every cycle, and anything that stops the animation (a renderer
+    # that ignores SMIL, a paused tab, an image re-decode) can leave it blank
+    # for good. Typing once and freezing on the finished session cannot.
     slots = [i for i, (k, _) in enumerate(lines) if k != "gap"]
-    per, hold = 0.55, 3.2
-    cycle = len(slots) * per + hold
+    per = 0.5
+    total = len(slots) * per + 0.6
 
     p = []
     a = p.append
@@ -150,20 +153,21 @@ def terminal(t):
             continue
         y = y0 + i * lh
         begin = slot_i * per
-        t0, t1 = begin / cycle, (begin + per) / cycle
+        t0 = begin / total
+        t1 = (begin + per * 0.5) / total
         prompt_w = 2 * fs * CH if kind == "cmd" else 0
         text_w = len(text.replace("&#183;", "-").replace("&#8212;", "-")) * fs * CH
         total_w = prompt_w + text_w
-        cid = f"c{i}"
 
-        # typewriter: a clip that widens across the line, then holds
-        a(f'<clipPath id="{cid}"><rect x="{x0}" y="{y-fs}" height="{lh}" width="0">'
-          f'<animate attributeName="width" values="0;0;{total_w};{total_w};0" '
-          f'keyTimes="0;{t0:.4f};{t1:.4f};0.985;1" dur="{cycle:.2f}s" '
-          f'repeatCount="indefinite" calcMode="linear"/></rect></clipPath>')
-
+        # No animation on the text itself. Once an <animate> exists, its value
+        # at t=0 overrides the static attribute -- and when this SVG is embedded
+        # as <img> (which is how GitHub renders README images) some renderers
+        # never advance the clock, so an opacity-0 first frame means the panel
+        # stays blank permanently. The text is therefore always painted; the
+        # caret below carries the motion, and losing a caret costs nothing.
         fill = {"cmd": t["fg"], "out": t["muted"], "ok": t["accent"]}[kind]
-        a(f'<g clip-path="url(#{cid})">')
+
+        a('<g>')
         if kind == "cmd":
             a(f'<text x="{x0}" y="{y}" font-family="{MONO}" font-size="{fs}" '
               f'fill="{t["accent"]}">$ </text>')
@@ -174,21 +178,13 @@ def terminal(t):
             a(f'<text x="{x0}" y="{y}" font-family="{MONO}" font-size="{fs}" '
               f'fill="{fill}">{marker}{text}</text>')
         a('</g>')
-
-        # caret rides the end of the line while it is being typed
-        a(f'<rect y="{y-fs+2}" width="8" height="{fs+1}" fill="{t["accent"]}" opacity="0" x="{x0}">'
-          f'<animate attributeName="x" values="{x0};{x0};{x0+total_w};{x0+total_w}" '
-          f'keyTimes="0;{t0:.4f};{t1:.4f};1" dur="{cycle:.2f}s" repeatCount="indefinite"/>'
-          f'<animate attributeName="opacity" values="0;0;1;1;0;0" '
-          f'keyTimes="0;{t0:.4f};{min(t0+0.001,t1):.4f};{t1:.4f};{min(t1+0.001,0.999):.4f};1" '
-          f'dur="{cycle:.2f}s" repeatCount="indefinite"/></rect>')
         slot_i += 1
 
-    # resting caret once the session finishes typing
+    # the session rests with a blinking caret; its first frame is "on", so a
+    # frozen clock leaves a solid caret rather than nothing
     ylast = y0 + len(lines) * lh
-    a(f'<rect x="{x0}" y="{ylast-fs+2}" width="8" height="{fs+1}" fill="{t["accent"]}" opacity="0">'
-      f'<animate attributeName="opacity" values="0;0;1;0;1;0" '
-      f'keyTimes="0;{(len(slots)*per)/cycle:.4f};0.90;0.93;0.96;1" dur="{cycle:.2f}s" '
+    a(f'<rect x="{x0}" y="{ylast-fs+2}" width="8" height="{fs+1}" fill="{t["accent"]}">'
+      f'<animate attributeName="opacity" values="1;1;0;0" dur="1.1s" '
       f'repeatCount="indefinite"/></rect>')
     a('</svg>')
     return "".join(p)
